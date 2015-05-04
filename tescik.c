@@ -21,8 +21,7 @@ int main(int argc, char **argv)
         if (buff[i-1]== ' '){
 	char* buff2 = malloc((i+1)*sizeof( char));
 	strncpy (buff2 , buff, i);
-            	dt_print(s, stdout);
-		dt_add( s, buff2 );
+		dt_add (s, buff2);
 		for (j=i;j>=0;j--)
 			buff[j] = '\0';
             i=0;
